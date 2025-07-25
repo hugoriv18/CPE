@@ -5,12 +5,12 @@ This repository contains a set of cosmological parameter inference runs using [C
 ## 📁 Repository Structure
 
 runs/
-camb/ # Runs using the CAMB theory code
-base/ # Standard ΛCDM
-run.yaml # Cobaya configuration file
-chains/ # Output MCMC chains
-base_mnu/ # ΛCDM + neutrino mass
-base_w0wa/ # w₀wₐCDM: dynamical dark energy
+  camb/ # Runs using the CAMB theory code
+    base/ # Standard ΛCDM
+      run.yaml # Cobaya configuration file
+      chains/ # Output MCMC chains
+    base_mnu/ # ΛCDM + neutrino mass
+    base_w0wa/ # w₀wₐCDM: dynamical dark energy
 ...
 
 Each subdirectory in `runs/camb/` corresponds to a different cosmological model.
