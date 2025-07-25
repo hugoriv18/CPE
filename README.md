@@ -2,14 +2,6 @@
 
 This repository contains a set of cosmological parameter inference runs using [Cobaya](https://cobaya.readthedocs.io/en/latest/), applied to several cosmological models and data combinations from recent large-scale structure and supernovae surveys, as well as compressed CMB priors.
 
-## 🌌 Objective
-
-The goal is to explore how different extensions to the standard ΛCDM model affect parameter inference when combining current cosmological datasets, including:
-
-- Baryon Acoustic Oscillations (BAO) from **DESI DR2**
-- Type Ia supernovae from **Pantheon+**, **DES-Y5**, and **Union3**
-- Compressed **CMB** priors in the form of Gaussian constraints
-
 ## 📁 Repository Structure
 
 runs/
@@ -23,12 +15,15 @@ base_w0wa/ # w₀wₐCDM: dynamical dark energy
 
 Each subdirectory in `runs/camb/` corresponds to a different cosmological model.
 
-## 🧪 Cosmological Models Included
+## 🌌 Cosmological Models Included
 
-- `base`: Standard ΛCDM
-- `base_mnu`: ΛCDM with free total neutrino mass (Σmν)
-- `base_w0wa`: Dynamical dark energy model with parameters (w₀, wₐ)
-- More extensions can be added similarly.
+- `base`: Standard ΛCDM with six parameters.
+- `base_mnu`: ΛCDM with free total neutrino mass (Σmν).
+- `base_omegak`: ΛCDM with spatial curvature (Ωₖ ≠ 0).
+- `base_w`: wCDM model with a constant dark energy equation of state parameter w.
+- `base_w0wa`: Dynamical dark energy model with time-varying equation of state (w₀, wₐ) using the CPL parametrization.
+
+Additional extensions can be added in the same structure to explore other beyond-ΛCDM scenarios.
 
 ## 📦 Likelihoods Used
 
@@ -45,7 +40,7 @@ This project includes combinations of the following data:
 
 Likelihoods are configured via YAML files and CMB compressed information is implemented as Gaussian priors.
 
-## 🚀 Requirements
+## Requirements
 
 - Python ≥ 3.9
 - [Cobaya](https://cobaya.readthedocs.io)
