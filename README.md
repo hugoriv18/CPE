@@ -1,4 +1,4 @@
-# 📊 Cosmological Parameter Inference
+# 📊 Cosmological Parameter Estimation
 
 This repository contains a set of cosmological parameter inference runs using [Cobaya](https://cobaya.readthedocs.io/en/latest/), applied to several cosmological models and data combinations from recent large-scale structure and supernovae surveys, as well as compressed CMB priors.
 
