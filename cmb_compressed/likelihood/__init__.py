@@ -1,0 +1,1 @@
+from .cmb_compressed_v1 import cmb_compressed_v1
