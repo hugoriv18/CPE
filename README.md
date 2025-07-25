@@ -21,7 +21,6 @@ base_mnu/ # ΛCDM + neutrino mass
 base_w0wa/ # w₀wₐCDM: dynamical dark energy
 ...
 
-
 Each subdirectory in `runs/camb/` corresponds to a different cosmological model.
 
 ## 🧪 Cosmological Models Included
@@ -52,11 +51,3 @@ Likelihoods are configured via YAML files and CMB compressed information is impl
 - [Cobaya](https://cobaya.readthedocs.io)
 - [CAMB](https://camb.info) as theory code
 - (Optional) MPI for parallel runs
-
-Example setup:
-
-```bash
-conda create -n cobaya_env python=3.10
-conda activate cobaya_env
-pip install cobaya
-pip install camb
