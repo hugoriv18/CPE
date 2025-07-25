@@ -23,7 +23,7 @@ This project includes combinations of the following data:
   - DES-Y5
   - Union3
 - **CMB compressed priors**
-  - Gaussian priors on parameters like `θ_s`, `r_s/D_V`, etc.
+  - Gaussian priors on parameters like `θ_s`, etc.
 
 Likelihoods are configured via YAML files and CMB compressed information is implemented as Gaussian priors.
 
