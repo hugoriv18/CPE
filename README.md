@@ -12,3 +12,11 @@ The goal is to explore how different extensions to the standard ΛCDM model affe
 
 ## 📁 Repository Structure
 
+runs/
+camb/ # Runs using the CAMB theory code
+base/ # Standard ΛCDM
+run.yaml # Cobaya configuration file
+chains/ # Output MCMC chains
+base_mnu/ # ΛCDM + neutrino mass
+base_w0wa/ # w₀wₐCDM: dynamical dark energy
+...
