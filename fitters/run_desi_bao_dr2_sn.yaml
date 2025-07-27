@@ -14,11 +14,11 @@ likelihood:
 params:
   logA:
     latex: \ln(10^{10} A_\mathrm{s})
-    drop: true
+    drop: True
     value: 3.036
   As:
-    value: 'lambda logA: 1e-10*np.exp(logA)'
     latex: A_\mathrm{s}
+    value: 'lambda logA: 1e-10*np.exp(logA)'
   ns:
     latex: n_\mathrm{s}
     value: 0.9649
@@ -29,8 +29,8 @@ params:
     latex: \Omega_\mathrm{b} h^2
     value: 0.02237
   omch2:
-    value: 'lambda omm, mnu, ombh2, H0: omm*(H0/100)**2 - mnu / 93.14 - ombh2'
     latex: \Omega_\mathrm{c} h^2
+    value: 'lambda omm, mnu, ombh2, H0: omm*(H0/100)**2 - mnu / 93.14 - ombh2'
   tau:
     latex: \tau_\mathrm{reio}
     value: 0.0544
@@ -52,35 +52,16 @@ params:
     
   omegam:
   omegamh2:
-    derived: 'lambda omegam, H0: omegam*(H0/100)**2'
     latex: \Omega_\mathrm{m} h^2
+    derived: 'lambda omegam, H0: omegam*(H0/100)**2'
   omegal:
     latex: \Omega_\Lambda
-  zrei:
-    latex: z_\mathrm{reio}
-  YHe:
-    latex: Y_\mathrm{P}
-  Y_p:
-    latex: Y_P^\mathrm{BBN}
-  DHBBN:
-    derived: 'lambda DH: 10**5*DH'
-    latex: 10^5 \mathrm{D}/\mathrm{H}
-  A:
-    derived: 'lambda As: 1e9*As'
-    latex: 10^9 A_\mathrm{s}
-  clamp:
-    derived: 'lambda As, tau: 1e9*As*np.exp(-2*tau)'
-    latex: 10^9 A_\mathrm{s} e^{-2\tau}
-  age:
-    latex: \mathrm{Age}/\mathrm{Gyr}
   rdrag:
-    value: 'lambda hrdrag, H0: 100 * hrdrag / H0'
     latex: r_\mathrm{d}
-  zdrag:
-    latex: z_\mathrm{d}
+    value: 'lambda hrdrag, H0: 100 * hrdrag / H0'
   H0rdrag:
-    derived: 'lambda H0, rdrag: H0 * rdrag'
     latex: H_0 r_\mathrm{d}
+    derived: 'lambda H0, rdrag: H0 * rdrag'
   hrdrag:
     latex: hr_\mathrm{d}
     prior:
@@ -101,7 +82,7 @@ params:
       loc: 0.3152
       scale: 0.001
     proposal: 0.0005
-    drop: true
+    drop: True
   # omk:
   #   latex: \Omega_\mathrm{k}
   #   prior:
@@ -145,7 +126,7 @@ params:
 
 sampler:
   mcmc:
-    drag: false
+    drag: False
     oversample_power: 0.4
     proposal_scale: 1.9
     covmat: null
