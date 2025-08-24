@@ -30,9 +30,6 @@ This project includes combinations of the following data:
     - Acoustic scale (`θ*`)
     - Baryon density (`Ω_b h²`)
     - Cold+baryon density (`Ω_bc h²`)
-  - These are implemented as compressed likelihoods to capture the main CMB information without using the full likelihood.
-
-Likelihoods are configured via YAML files. Compressed CMB and BBN information are incorporated as Gaussian priors.
 
 ## ⚙️ Requirements
 
