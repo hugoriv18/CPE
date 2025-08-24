@@ -23,16 +23,17 @@ This project includes combinations of the following data:
   - Union3
 - **BBN**
   - Gaussian prior on Ω_b h² from Big Bang Nucleosynthesis
-- **CMB compressed priors**
-  - Gaussian priors on derived parameters such as:
+- **CMB**
+  - Gaussian priors on derived parameters:
+    - Acoustic scale (`θ*`)
+  - Compressed likelihood using parameters:
     - Acoustic scale (`θ*`)
     - Baryon density (`Ω_b h²`)
     - Cold+baryon density (`Ω_bc h²`)
-
+  
 ## ⚙️ Requirements
 
 - Python ≥ 3.9
 - [Cobaya](https://cobaya.readthedocs.io)
 - [CAMB](https://camb.info) as theory code
 - (Optional) MPI for parallel runs
-
