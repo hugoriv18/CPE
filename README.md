@@ -18,7 +18,7 @@ Additional extensions can be added in the same structure to explore other beyond
 This project includes combinations of the following data:
 
 - **BAO**
-  - DESI DR2 (either binned or integrated across redshift)
+  - DESI BAO DR2
 - **Supernovae**
   - Pantheon+
   - DES-Y5
