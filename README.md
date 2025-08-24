@@ -11,8 +11,6 @@ This repository contains a set of cosmological parameter inference runs using [C
 - `base_w0wa`: Dynamical dark energy model with time-varying equation of state (w₀, wₐ) using the CPL parametrization.
 - `base_nnu`: ΛCDM with variable effective number of relativistic species (N_eff).
 
-Additional extensions can be added in the same structure to explore other beyond-ΛCDM scenarios.
-
 ## 📦 Likelihoods and Priors Used
 
 This project includes combinations of the following data:
