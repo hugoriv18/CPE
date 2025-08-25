@@ -20,7 +20,7 @@ This project includes combinations of the following data:
 - **Supernovae**
   - Pantheon+
   - DES-Y5
-    # https://arxiv.org/abs/2401.02929
+    [arXiv:2412.05990](https://arxiv.org/abs/2401.02929)
   - Union3
 - **BBN**
   - Gaussian prior on Ω_b h² from Big Bang Nucleosynthesis
