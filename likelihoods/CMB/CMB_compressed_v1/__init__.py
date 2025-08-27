@@ -1,0 +1,2 @@
+from .cmb_compressed_camb import cmb_compressed_camb
+from .cmb_compressed_classy import cmb_compressed_classy
